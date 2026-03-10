@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Chidera Ojimba — Cloud Engineer">
+  <defs>
+    <!-- Background gradient: dark navy to deep indigo -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="100%" stop-color="#1a1040"/>
+    </linearGradient>
+
+    <!-- Text gradient: sky blue → vivid purple -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <!-- Cloud stroke gradient -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Outer glow filter -->
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle inner shadow for depth -->
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7c3aed" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="192" height="192" rx="44" fill="url(#bg)"/>
+
+  <!-- Border ring (accent purple, low opacity) -->
+  <rect x="4" y="4" width="192" height="192" rx="44"
+        fill="none" stroke="url(#textGrad)" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Cloud arc — represents cloud engineering identity -->
+  <!-- Main cloud body centered above the monogram -->
+  <path
+    d="M64 88 C64 76, 73 68, 84 68
+       C87 60, 95 54, 105 54
+       C117 54, 127 63, 128 74
+       C136 75, 142 82, 142 90
+       C142 99, 135 106, 126 106
+       L76 106
+       C69 106, 64 98, 64 88 Z"
+    fill="none"
+    stroke="url(#cloudGrad)"
+    stroke-width="4.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"
+  />
+
+  <!-- "CO" monogram below the cloud -->
+  <text
+    x="100"
+    y="165"
+    text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="62"
+    font-weight="900"
+    letter-spacing="4"
+    fill="url(#textGrad)"
+    filter="url(#textShadow)"
+  >CO</text>
+
+
+</svg>

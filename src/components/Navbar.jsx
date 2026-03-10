@@ -23,12 +23,14 @@ export default function Navbar() {
       <div className="section-container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="hero" smooth duration={500} className="cursor-pointer">
-            <span
-              className="inline-flex items-center rounded-full border border-accent-500/60
-                         bg-accent-500/10 px-4 py-1.5 text-sm sm:text-base font-black
-                         tracking-[0.12em] uppercase text-accent-300 shadow-[0_0_24px_rgba(124,58,237,0.35)]"
-            >
+          <Link to="hero" smooth duration={500} className="cursor-pointer flex items-center gap-2 group">
+            <img
+              src="/logo.svg"
+              alt="Chidera Ojimba logo"
+              className="h-10 w-10 rounded-xl transition-transform duration-300 group-hover:scale-110
+                         drop-shadow-[0_0_8px_rgba(124,58,237,0.6)]"
+            />
+            <span className="hidden sm:block text-sm font-bold tracking-wide text-accent-300 group-hover:text-accent-200 transition-colors">
               My Portfolio
             </span>
           </Link>
