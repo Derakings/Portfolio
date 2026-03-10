@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #111111;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #7c3aed;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glow-border {
+    @apply border border-accent-600/40 shadow-[0_0_20px_rgba(124,58,237,0.15)];
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-accent-600 hover:bg-accent-500 text-white font-semibold rounded-lg
+           transition-all duration-300 hover:shadow-[0_0_25px_rgba(139,92,246,0.5)]
+           active:scale-95 cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border border-accent-500 text-accent-400 hover:bg-accent-600/10
+           font-semibold rounded-lg transition-all duration-300 active:scale-95 cursor-pointer;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl font-bold text-white mb-2;
+  }
+
+  .section-subheading {
+    @apply text-accent-400 text-sm font-mono uppercase tracking-widest mb-4 block;
+  }
+}
