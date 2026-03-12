@@ -63,7 +63,7 @@ function ProjectCard({ project, index }) {
             rel="noopener noreferrer"
             className="btn-primary text-xs py-2 px-4"
           >
-            Live Demo
+            Live server
           </a>
         )}
       </div>
