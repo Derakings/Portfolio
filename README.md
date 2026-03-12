@@ -6,7 +6,7 @@ My Personal portfolio website, a Cloud Engineer specialising in AWS, Azure, Kube
 
 ## Live Site
 
-> Coming soon — deploy to Vercel and add your URL here.
+> https://derakings.vercel.app
 
 ---
 
