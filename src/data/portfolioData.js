@@ -21,7 +21,7 @@ export const personalInfo = {
   github: "https://github.com/Derakings",
   // TODO: Replace with your resume PDF URL (Google Drive, Cloudinary, or place in /public)
   resumeUrl:
-    "https://drive.google.com/file/d/1_4Mi4OwmoRml3wTWBlF9pDpawBH6RyDY/view?usp=drive_link",
+    "https://docs.google.com/document/d/1iCayWbgMUgi5TcuVhwXL7M9XsqL9fr3d/edit?usp=sharing&ouid=116729427123835559428&rtpof=true&sd=true",
   // TODO: Place your photo in /public/profile.jpg, then this path auto-resolves
   photoUrl: "/DERA.jpg",
   photoAlt: "Profile photo",
